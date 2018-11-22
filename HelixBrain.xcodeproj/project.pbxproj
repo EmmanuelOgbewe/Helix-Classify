@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		B5CB988B21A65B010016B667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB988A21A65B010016B667 /* AppDelegate.swift */; };
-		B5CB988D21A65B010016B667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB988C21A65B010016B667 /* ViewController.swift */; };
 		B5CB989021A65B010016B667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CB988E21A65B010016B667 /* Main.storyboard */; };
 		B5CB989321A65B010016B667 /* HelixBrain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5CB989121A65B010016B667 /* HelixBrain.xcdatamodeld */; };
 		B5CB989521A65B020016B667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CB989421A65B020016B667 /* Assets.xcassets */; };
 		B5CB989821A65B020016B667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CB989621A65B020016B667 /* LaunchScreen.storyboard */; };
+		B5CB98A221A65B740016B667 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB98A121A65B740016B667 /* StartVC.swift */; };
+		B5CB98A521A65BE50016B667 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB98A421A65BE50016B667 /* ColorHelper.swift */; };
+		B5CB98A721A667D30016B667 /* ImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB98A621A667D30016B667 /* ImagesVC.swift */; };
+		B5CB98A921A712180016B667 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5CB98A821A712180016B667 /* Resnet50.mlmodel */; };
+		B5CB98AB21A712580016B667 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB98AA21A712580016B667 /* SpeechHelper.swift */; };
+		B5CB98AD21A71AAB0016B667 /* ImageClassificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB98AC21A71AAB0016B667 /* ImageClassificationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5CB988721A65B010016B667 /* HelixBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelixBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CB988A21A65B010016B667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5CB988C21A65B010016B667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5CB988F21A65B010016B667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CB989221A65B010016B667 /* HelixBrain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelixBrain.xcdatamodel; sourceTree = "<group>"; };
 		B5CB989421A65B020016B667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CB989721A65B020016B667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5CB989921A65B020016B667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CB98A121A65B740016B667 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		B5CB98A421A65BE50016B667 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		B5CB98A621A667D30016B667 /* ImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesVC.swift; sourceTree = "<group>"; };
+		B5CB98A821A712180016B667 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		B5CB98AA21A712580016B667 /* SpeechHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
+		B5CB98AC21A71AAB0016B667 /* ImageClassificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				B5CB988A21A65B010016B667 /* AppDelegate.swift */,
-				B5CB988C21A65B010016B667 /* ViewController.swift */,
+				B5CB98A321A65BC60016B667 /* Helpers */,
+				B5CB98A021A65B1F0016B667 /* ViewControllers */,
+				B5CB989F21A65B0B0016B667 /* ML-Models */,
 				B5CB988E21A65B010016B667 /* Main.storyboard */,
 				B5CB989421A65B020016B667 /* Assets.xcassets */,
 				B5CB989621A65B020016B667 /* LaunchScreen.storyboard */,
@@ -65,6 +77,33 @@
 				B5CB989121A65B010016B667 /* HelixBrain.xcdatamodeld */,
 			);
 			path = HelixBrain;
+			sourceTree = "<group>";
+		};
+		B5CB989F21A65B0B0016B667 /* ML-Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB98A821A712180016B667 /* Resnet50.mlmodel */,
+			);
+			path = "ML-Models";
+			sourceTree = "<group>";
+		};
+		B5CB98A021A65B1F0016B667 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB98A121A65B740016B667 /* StartVC.swift */,
+				B5CB98A621A667D30016B667 /* ImagesVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5CB98A321A65BC60016B667 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB98A421A65BE50016B667 /* ColorHelper.swift */,
+				B5CB98AA21A712580016B667 /* SpeechHelper.swift */,
+				B5CB98AC21A71AAB0016B667 /* ImageClassificationHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CB988D21A65B010016B667 /* ViewController.swift in Sources */,
 				B5CB988B21A65B010016B667 /* AppDelegate.swift in Sources */,
+				B5CB98AD21A71AAB0016B667 /* ImageClassificationHelper.swift in Sources */,
 				B5CB989321A65B010016B667 /* HelixBrain.xcdatamodeld in Sources */,
+				B5CB98AB21A712580016B667 /* SpeechHelper.swift in Sources */,
+				B5CB98A221A65B740016B667 /* StartVC.swift in Sources */,
+				B5CB98A521A65BE50016B667 /* ColorHelper.swift in Sources */,
+				B5CB98A921A712180016B667 /* Resnet50.mlmodel in Sources */,
+				B5CB98A721A667D30016B667 /* ImagesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
